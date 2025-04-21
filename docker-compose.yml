@@ -1,0 +1,25 @@
+version: '3.9'
+
+services:
+  backend:
+    build:
+      context: ./backend
+    container_name: workvite-backend
+    ports:
+      - "5000:5000"
+    networks:
+      - workvite-net
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: workvite-frontend
+    ports:
+      - "3000:3000"
+    networks:
+      - workvite-net
+    depends_on:
+      - backend
+
+networks:
+  workvite-net:
