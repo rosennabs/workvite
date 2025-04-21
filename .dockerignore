@@ -1,9 +1,26 @@
-
+# Node dependencies
+node_modules
 frontend/node_modules
 backend/node_modules
-.docker
-Dockerfile
-.dockerignore
+
+# Build artifacts
+dist
+frontend/.next
+
+# NPM logs
+npm-debug.log*
+
+# OS & Editor clutter
+.DS_Store
+.vscode
+
+# Env & secrets
+.env*
+*.pem
+
+# Git & Docker meta
 .git
 .gitignore
-.env
+.dockerignore
+Dockerfile
+docker-compose.yml
