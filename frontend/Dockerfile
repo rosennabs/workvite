@@ -19,4 +19,4 @@ RUN wget https://github.com/jwilder/dockerize/releases/download/v0.6.1/dockerize
 RUN npm run build
 
 # Wait for backend to be ready, then start frontend
-CMD dockerize -wait tcp://backend:5000 -timeout 20s npm start
+CMD dockerize -wait tcp://backend:8080 -timeout 20s npm start
