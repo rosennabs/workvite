@@ -7,7 +7,7 @@ export default function Home() {
   const [message, setMessage] = useState('');
 
   useEffect(() => {
-    axios.get('http://localhost:8080/api/hello')
+    axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/hello`)
       .then(res => setMessage(res.data.message));
   }, []);
 

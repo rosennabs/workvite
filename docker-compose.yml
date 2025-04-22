@@ -9,6 +9,8 @@ services:
       - "8080:8080"
     networks:
       - workvite-net
+    env_file:
+      - ./backend/.env
 
   frontend:
     build:
@@ -18,6 +20,8 @@ services:
       - "3000:3000"
     networks:
       - workvite-net
+    env_file:
+      - ./frontend/.env.docker
     depends_on:
       - backend
 
