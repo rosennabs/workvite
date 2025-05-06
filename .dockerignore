@@ -9,6 +9,7 @@ frontend/.next
 
 # NPM logs
 npm-debug.log*
+*.log
 
 # OS & Editor clutter
 .DS_Store
