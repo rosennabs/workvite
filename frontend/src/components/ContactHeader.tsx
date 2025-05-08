@@ -6,7 +6,7 @@ import { FaFacebookSquare, FaTwitter, FaPinterestP, FaInstagram } from "react-ic
 
 export default function ContactHeader() {
   return (
-    <div className="flex justify-between">
+    <div className="flex justify-between py-4 px-8 bg-[#262626] border-b-[0.5px] border-gray-300/30">
       <div className="flex gap-8 text-gray-400">
         <ContactItem icon={<MdOutlineMail />} text="needhelp@example.com" color="text-green-600" />
         <ContactItem icon={<MdPhone />} text="92 888 666 0000" color="text-green-600" />

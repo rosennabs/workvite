@@ -5,9 +5,9 @@ import Nav from "./Nav";
 
 export default function Header() {
   return (
-    <header>
+    <div className="absolute inset-x-0 top-0 z-10">
       <ContactHeader />
       <Nav/>
-    </header>
+    </div>
   );
 }

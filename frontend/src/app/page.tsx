@@ -14,8 +14,14 @@ export default function Home() {
   // }, []);
 
   return (
-    <div className="m-8">
+    <div className="relative">
+      <img className="opacity-60 object-cover scale-145 py-42" src="/banner-1.jpg" alt="image of a corporate woman" />
+
+      {/* gradient overlay: dark → transparent, left → right */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-transparent" />
+
       <Header />
+      
     </div>
     
   )
