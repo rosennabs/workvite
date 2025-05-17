@@ -30,7 +30,7 @@ const hrServiceItems: HRServiceItem[] = [
 
 export default function RenderHRServices() {
   return (
-    <div className="flex flex-col items-center bg-[#f6f6f6] text-black min-h-[1000px] w-full p-24">
+    <div className="flex flex-col items-center bg-[#f6f6f6] text-black w-full p-24">
       <p className="text-green-600 font-bold mb-4">Our All Services List</p>
       <h2 className="text-5xl font-bold leading-16 tracking-tight mb-8">Outsourced HR Services</h2>
 
