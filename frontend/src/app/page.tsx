@@ -7,6 +7,8 @@ import RenderResourceCards from "@/components/RenderResourceCards";
 import RenderAbout from "@/components/RenderAbout";
 import RenderHRServices from "@/components/RenderHRServices";
 import RenderKPI from "@/components/RenderKPI";
+import RenderProjects from "@/components/RenderProjects";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 
 
 
@@ -47,11 +49,21 @@ export default function Home() {
       <RenderHRServices />
       
       <RenderKPI />
-      
-      
 
-      <div className="bg-[#f6f6f6] w-full min-h-[1000px]">
-        <p>Hold</p>
+      <div className="bg-[#f6f6f6] text-black w-full min-h-[1000px]">
+        <div className="flex mt-56 mx-24 justify-between w-3/4">
+        <div>
+          <p className="text-green-600 font-bold mb-4">Staffing Recent Closed Projects</p>
+          <h2 className="text-5xl font-bold leading-16 tracking-tight mb-8">Latest From Our Project</h2>
+        </div>
+
+        <div>
+            <button className="bg-white p-6 mr-2 rounded-full text-xl"><FaArrowLeft /></button>
+            <button className="bg-white p-6 rounded-full text-xl"><FaArrowRight /></button>  
+          </div>
+        </div>
+
+        <RenderProjects/>
       </div>
 
     </div>
