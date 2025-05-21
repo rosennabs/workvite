@@ -51,7 +51,7 @@ export default function RenderKPI() {
 
       </div>
 
-      <div className="absolute -bottom-32 z-10 justify-center bg-white mx-24 h-[257px]">
+      <div className="absolute -bottom-32 z-10 justify-center bg-white mx-32 h-[257px]">
         <div className="bg-green-600 h-3"></div>
         <div className="grid grid-cols-4 ">
           <div className="flex flex-col items-center text-center border-r border-r-gray-200 space-y-4 py-12 px-20 text-black">

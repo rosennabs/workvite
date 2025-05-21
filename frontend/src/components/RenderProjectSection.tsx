@@ -5,7 +5,7 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 export default function RenderProjectSection() {
   return(
     <div className="bg-[#f6f6f6] text-black w-full">
-      <div className="flex mt-56 mx-24 justify-between w-3/4">
+      <div className="flex mt-56 mx-32 justify-between w-3/4">
         <div>
           <p className="text-green-600 font-bold mb-4">Staffing Recent Closed Projects</p>
           <h2 className="text-5xl font-bold leading-16 tracking-tight mb-8">Latest From Our Project</h2>
@@ -42,7 +42,7 @@ export default function RenderProjectSection() {
         </div>
       </div>
 
-      <div className="flex justify-between bg-green-600 w-full p-28 text-white mt-24">
+      <div className="flex justify-between bg-green-600 w-full py-28 px-32 text-white mt-24">
         <h2 className="text-5xl font-bold leading-16 tracking-tight mb-8">Hire Your Next Candidate On Recvite</h2>
         <button className="px-16 h-[70px] text-sm font-bold bg-black">
           DISCOVER MORE
