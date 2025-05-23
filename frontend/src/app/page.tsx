@@ -80,19 +80,19 @@ export default function Home() {
             <span className="text-white bg-green-600 p-2 text-5xl"><CgQuote /></span>
             <p className="text-xl italic text-gray-500 leading-9">This is due to their excellent service, competitive pricing and customer support. It’s throughly refresing to get such a personal touch.</p>
             <span className="font-bold">Rogers White</span>
-            <img className="absolute -bottom-12" src="/testimonial-1.png" />
+            <img className="absolute -bottom-12" src="/testimonial-1.png" alt="headshot"/>
           </div>
           <div className="relative flex flex-col items-center bg-white text-center border-t-10 border-green-600 space-y-8 px-12 h-[404px] text-black">
             <span className="text-white bg-green-600 p-2 text-5xl"><CgQuote /></span>
             <p className="text-xl italic text-gray-500 leading-9">This is due to their excellent service, competitive pricing and customer support. It’s throughly refresing to get such a personal touch.</p>
             <span className="font-bold">Mike Hardson</span>
-            <img className="absolute -bottom-12" src="/testimonial-3.png" />
+            <img className="absolute -bottom-12" src="/testimonial-3.png" alt="headshot" />
           </div>
           <div className="relative flex flex-col items-center bg-white text-center border-t-10 border-green-600 space-y-8 px-12 h-[404px] text-black">
             <span className="text-white bg-green-600 p-2 text-5xl"><CgQuote /></span>
             <p className="text-xl italic text-gray-500 leading-9">This is due to their excellent service, competitive pricing and customer support. It’s throughly refresing to get such a personal touch.</p>
             <span className="font-bold">Christine Eve</span>
-            <img className="absolute -bottom-12" src="/testimonial-2.png" />
+            <img className="absolute -bottom-12" src="/testimonial-2.png" alt="headshot" />
           </div>
           
 
@@ -103,7 +103,12 @@ export default function Home() {
       </div>
 
       
-      <div className="w-full bg-[#f6f6f6] h-[1000px]"></div>
+      <div className="flex items-center justify-center w-full bg-[#f6f6f6] h-[700px]">
+        <div className="border-t w-5/6 border-t-gray-300 mt-56 pt-32">
+          
+          <img className="opacity-30" src="/clients-logo-3.png" alt="logo"/>
+        </div>
+      </div>
     </div>
 
   );
