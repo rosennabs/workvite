@@ -10,7 +10,7 @@ import RenderKPI from "@/components/RenderKPI";
 import RenderProjectSection from "@/components/RenderProjectSection";
 import RenderTestimonials from "@/components/RenderTestimonials";
 import RenderLogo from "@/components/RenderLogo";
-
+import RenderBlogs from "@/components/RenderBlogs";
 
 
 export default function Home() {
@@ -54,6 +54,8 @@ export default function Home() {
       <RenderTestimonials/>
    
       <RenderLogo />
+
+      <RenderBlogs/>
     </div>
 
   );

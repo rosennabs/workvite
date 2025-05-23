@@ -2,6 +2,26 @@
 import { GiCheckMark } from "react-icons/gi";
 import { CgQuote } from "react-icons/cg";
 
+interface Testimonial {
+  name: string,
+  image: string
+}
+
+const RenderTestimonial: Testimonial[] = [
+  {
+    name: "Rogers White",
+    image: "/testimonial-1.png"
+  },
+  {
+    name: "Mike Hardson",
+    image: "/testimonial-3.png"
+  },
+  {
+    name: "Christine Eve",
+    image: "/testimonial-2.png"
+  },
+
+]
 
 export default function RenderTestimonials() {
   return (
@@ -28,24 +48,15 @@ export default function RenderTestimonials() {
 
 
       <div className="absolute -bottom-95 grid grid-cols-3 gap-6 justify-items-center w-5/6">
-        <div className="relative flex flex-col items-center bg-white text-center border-t-10 border-green-600 space-y-8 px-12 h-[404px] text-black">
-          <span className="text-white bg-green-600 p-2 text-5xl"><CgQuote /></span>
-          <p className="text-xl italic text-gray-500 leading-9">This is due to their excellent service, competitive pricing and customer support. It’s throughly refresing to get such a personal touch.</p>
-          <span className="font-bold">Rogers White</span>
-          <img className="absolute -bottom-12" src="/testimonial-1.png" alt="headshot" />
-        </div>
-        <div className="relative flex flex-col items-center bg-white text-center border-t-10 border-green-600 space-y-8 px-12 h-[404px] text-black">
-          <span className="text-white bg-green-600 p-2 text-5xl"><CgQuote /></span>
-          <p className="text-xl italic text-gray-500 leading-9">This is due to their excellent service, competitive pricing and customer support. It’s throughly refresing to get such a personal touch.</p>
-          <span className="font-bold">Mike Hardson</span>
-          <img className="absolute -bottom-12" src="/testimonial-3.png" alt="headshot" />
-        </div>
-        <div className="relative flex flex-col items-center bg-white text-center border-t-10 border-green-600 space-y-8 px-12 h-[404px] text-black">
-          <span className="text-white bg-green-600 p-2 text-5xl"><CgQuote /></span>
-          <p className="text-xl italic text-gray-500 leading-9">This is due to their excellent service, competitive pricing and customer support. It’s throughly refresing to get such a personal touch.</p>
-          <span className="font-bold">Christine Eve</span>
-          <img className="absolute -bottom-12" src="/testimonial-2.png" alt="headshot" />
-        </div>
+        {RenderTestimonial.map((item, index) => (
+          <div key={index} className="relative flex flex-col items-center shadow-lg bg-white text-center border-t-10 border-green-600 space-y-8 px-12 h-[404px] text-black">
+            <span className="text-white bg-green-600 p-2 text-5xl"><CgQuote /></span>
+            <p className="text-xl italic text-gray-500 leading-9">This is due to their excellent service, competitive pricing and customer support. It’s throughly refresing to get such a personal touch.</p>
+            <span className="font-bold">{item.name}</span>
+            <img className="absolute -bottom-12" src={item.image} alt="headshot" />
+          </div>
+        ))}
+  
       </div>
 
     </div>
